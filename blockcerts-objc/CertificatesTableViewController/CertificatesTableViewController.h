@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CertificatesTableViewController.h
 //  blockcerts-objc
 //
 //  Created by Mari Batilando on 6/30/18.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface CertificatesTableViewController : UITableViewController
 
 @end
-

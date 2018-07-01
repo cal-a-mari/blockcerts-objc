@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		994DA58920E86A3C00822E49 /* CertificateDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 994DA58720E86A3C00822E49 /* CertificateDetailTableViewCell.m */; };
+		994DA58E20E86E5E00822E49 /* Certificate.m in Sources */ = {isa = PBXBuildFile; fileRef = 994DA58D20E86E5E00822E49 /* Certificate.m */; };
 		9982851C20E8443A001C5CED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9982851B20E8443A001C5CED /* AppDelegate.m */; };
-		9982851F20E8443A001C5CED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9982851E20E8443A001C5CED /* ViewController.m */; };
-		9982852220E8443A001C5CED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9982852020E8443A001C5CED /* Main.storyboard */; };
 		9982852420E8443D001C5CED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9982852320E8443D001C5CED /* Assets.xcassets */; };
 		9982852720E8443D001C5CED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9982852520E8443D001C5CED /* LaunchScreen.storyboard */; };
 		9982852A20E8443D001C5CED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9982852920E8443D001C5CED /* main.m */; };
 		9982853420E8443D001C5CED /* blockcerts_objcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9982853320E8443D001C5CED /* blockcerts_objcTests.m */; };
 		9982853F20E8443D001C5CED /* blockcerts_objcUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9982853E20E8443D001C5CED /* blockcerts_objcUITests.m */; };
+		999D0D6420E84A2D002CD4E1 /* CertificatesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 999D0D6220E84A2D002CD4E1 /* CertificatesTableViewController.m */; };
+		999D0D6A20E84D28002CD4E1 /* CertificateTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 999D0D6820E84D28002CD4E1 /* CertificateTableViewCell.m */; };
+		999D0D6B20E84D28002CD4E1 /* CertificateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 999D0D6920E84D28002CD4E1 /* CertificateTableViewCell.xib */; };
+		999D0D6F20E86617002CD4E1 /* CertificateDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 999D0D6D20E86617002CD4E1 /* CertificateDetailViewController.m */; };
+		999D0D7020E86617002CD4E1 /* CertificateDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 999D0D6E20E86617002CD4E1 /* CertificateDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		994DA58620E86A3C00822E49 /* CertificateDetailTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CertificateDetailTableViewCell.h; sourceTree = "<group>"; };
+		994DA58720E86A3C00822E49 /* CertificateDetailTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CertificateDetailTableViewCell.m; sourceTree = "<group>"; };
+		994DA58C20E86E5E00822E49 /* Certificate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Certificate.h; sourceTree = "<group>"; };
+		994DA58D20E86E5E00822E49 /* Certificate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Certificate.m; sourceTree = "<group>"; };
 		9982851720E8443A001C5CED /* blockcerts-objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "blockcerts-objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9982851A20E8443A001C5CED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9982851B20E8443A001C5CED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9982851D20E8443A001C5CED /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9982851E20E8443A001C5CED /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		9982852120E8443A001C5CED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9982852320E8443D001C5CED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9982852620E8443D001C5CED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9982852820E8443D001C5CED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +57,14 @@
 		9982853A20E8443D001C5CED /* blockcerts-objcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "blockcerts-objcUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9982853E20E8443D001C5CED /* blockcerts_objcUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = blockcerts_objcUITests.m; sourceTree = "<group>"; };
 		9982854020E8443D001C5CED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		999D0D6120E84A2D002CD4E1 /* CertificatesTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CertificatesTableViewController.h; sourceTree = "<group>"; };
+		999D0D6220E84A2D002CD4E1 /* CertificatesTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CertificatesTableViewController.m; sourceTree = "<group>"; };
+		999D0D6720E84D28002CD4E1 /* CertificateTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CertificateTableViewCell.h; sourceTree = "<group>"; };
+		999D0D6820E84D28002CD4E1 /* CertificateTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CertificateTableViewCell.m; sourceTree = "<group>"; };
+		999D0D6920E84D28002CD4E1 /* CertificateTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CertificateTableViewCell.xib; sourceTree = "<group>"; };
+		999D0D6C20E86617002CD4E1 /* CertificateDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CertificateDetailViewController.h; sourceTree = "<group>"; };
+		999D0D6D20E86617002CD4E1 /* CertificateDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CertificateDetailViewController.m; sourceTree = "<group>"; };
+		999D0D6E20E86617002CD4E1 /* CertificateDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CertificateDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +92,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		994DA58B20E86E4B00822E49 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				994DA58C20E86E5E00822E49 /* Certificate.h */,
+				994DA58D20E86E5E00822E49 /* Certificate.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		9982850E20E8443A001C5CED = {
 			isa = PBXGroup;
 			children = (
@@ -101,11 +124,11 @@
 		9982851920E8443A001C5CED /* blockcerts-objc */ = {
 			isa = PBXGroup;
 			children = (
+				994DA58B20E86E4B00822E49 /* Models */,
 				9982851A20E8443A001C5CED /* AppDelegate.h */,
 				9982851B20E8443A001C5CED /* AppDelegate.m */,
-				9982851D20E8443A001C5CED /* ViewController.h */,
-				9982851E20E8443A001C5CED /* ViewController.m */,
-				9982852020E8443A001C5CED /* Main.storyboard */,
+				999D0D6620E84A59002CD4E1 /* CertificatesTableViewController */,
+				999D0D7120E8661C002CD4E1 /* CertificateDetailViewController */,
 				9982852320E8443D001C5CED /* Assets.xcassets */,
 				9982852520E8443D001C5CED /* LaunchScreen.storyboard */,
 				9982852820E8443D001C5CED /* Info.plist */,
@@ -130,6 +153,30 @@
 				9982854020E8443D001C5CED /* Info.plist */,
 			);
 			path = "blockcerts-objcUITests";
+			sourceTree = "<group>";
+		};
+		999D0D6620E84A59002CD4E1 /* CertificatesTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				999D0D6120E84A2D002CD4E1 /* CertificatesTableViewController.h */,
+				999D0D6220E84A2D002CD4E1 /* CertificatesTableViewController.m */,
+				999D0D6720E84D28002CD4E1 /* CertificateTableViewCell.h */,
+				999D0D6820E84D28002CD4E1 /* CertificateTableViewCell.m */,
+				999D0D6920E84D28002CD4E1 /* CertificateTableViewCell.xib */,
+			);
+			path = CertificatesTableViewController;
+			sourceTree = "<group>";
+		};
+		999D0D7120E8661C002CD4E1 /* CertificateDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				999D0D6C20E86617002CD4E1 /* CertificateDetailViewController.h */,
+				999D0D6D20E86617002CD4E1 /* CertificateDetailViewController.m */,
+				999D0D6E20E86617002CD4E1 /* CertificateDetailViewController.xib */,
+				994DA58620E86A3C00822E49 /* CertificateDetailTableViewCell.h */,
+				994DA58720E86A3C00822E49 /* CertificateDetailTableViewCell.m */,
+			);
+			path = CertificateDetailViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,8 +283,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9982852720E8443D001C5CED /* LaunchScreen.storyboard in Resources */,
+				999D0D7020E86617002CD4E1 /* CertificateDetailViewController.xib in Resources */,
+				999D0D6B20E84D28002CD4E1 /* CertificateTableViewCell.xib in Resources */,
 				9982852420E8443D001C5CED /* Assets.xcassets in Resources */,
-				9982852220E8443A001C5CED /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +310,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9982851F20E8443A001C5CED /* ViewController.m in Sources */,
+				994DA58920E86A3C00822E49 /* CertificateDetailTableViewCell.m in Sources */,
+				994DA58E20E86E5E00822E49 /* Certificate.m in Sources */,
 				9982852A20E8443D001C5CED /* main.m in Sources */,
 				9982851C20E8443A001C5CED /* AppDelegate.m in Sources */,
+				999D0D6F20E86617002CD4E1 /* CertificateDetailViewController.m in Sources */,
+				999D0D6420E84A2D002CD4E1 /* CertificatesTableViewController.m in Sources */,
+				999D0D6A20E84D28002CD4E1 /* CertificateTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,14 +352,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9982852020E8443A001C5CED /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9982852120E8443A001C5CED /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9982852520E8443D001C5CED /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
