@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CertificatesTableViewController : UITableViewController
+@interface CertificatesTableViewController : UITableViewController<UIDocumentPickerDelegate>
 
 @end

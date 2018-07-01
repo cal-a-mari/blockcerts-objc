@@ -34,6 +34,7 @@
     self.navigationItem.title = _certificate.title;
     self.imageView.image = _certificate.image;
     [self.tableView reloadData];
+    [self.tableView setAllowsSelection:NO];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -46,19 +47,19 @@
 
     if (indexPath.row == 0) {
         cell.textLabel.text = @"Title";
-        cell.detailTextLabel.text = _certificate.title;
+        cell.detailTextLabel.text = self.certificate.title;
     } else if (indexPath.row == 1) {
         cell.textLabel.text = @"Subtitle";
-        cell.detailTextLabel.text = _certificate.subtitle;
+        cell.detailTextLabel.text = self.certificate.subtitle;
     } else if (indexPath.row == 2) {
         cell.textLabel.text = @"Description";
-        cell.detailTextLabel.text = _certificate.certificateDescription;
+        cell.detailTextLabel.text = self.certificate.certificateDescription;
     } else if (indexPath.row == 3) {
         cell.textLabel.text = @"Issuer";
-        cell.detailTextLabel.text = _certificate.issuer;
+        cell.detailTextLabel.text = self.certificate.issuer;
     } else if (indexPath.row == 4) {
         cell.textLabel.text = @"Share URL";
-        cell.detailTextLabel.text = _certificate.shareURL.absoluteString;
+        cell.detailTextLabel.text = self.certificate.shareURL.absoluteString;
     }
     
     return cell;
