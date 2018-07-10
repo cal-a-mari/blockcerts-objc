@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		994B653C20F320A6005D7177 /* CertificateValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 994B653B20F320A6005D7177 /* CertificateValidator.m */; };
+		994B653F20F32421005D7177 /* V2CertificateImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 994B653E20F32421005D7177 /* V2CertificateImporter.m */; };
+		994B654320F333B6005D7177 /* Issuer.h in Sources */ = {isa = PBXBuildFile; fileRef = 994B654220F333B6005D7177 /* Issuer.h */; };
+		994B654620F333ED005D7177 /* V2Issuer.m in Sources */ = {isa = PBXBuildFile; fileRef = 994B654520F333ED005D7177 /* V2Issuer.m */; };
+		994B654920F45A72005D7177 /* Assertion.m in Sources */ = {isa = PBXBuildFile; fileRef = 994B654820F45A72005D7177 /* Assertion.m */; };
+		994B654C20F4669D005D7177 /* Verification.m in Sources */ = {isa = PBXBuildFile; fileRef = 994B654B20F4669D005D7177 /* Verification.m */; };
+		994B654F20F46A9E005D7177 /* Receipt.m in Sources */ = {isa = PBXBuildFile; fileRef = 994B654E20F46A9E005D7177 /* Receipt.m */; };
 		994DA58920E86A3C00822E49 /* CertificateDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 994DA58720E86A3C00822E49 /* CertificateDetailTableViewCell.m */; };
 		994DA58E20E86E5E00822E49 /* Certificate.m in Sources */ = {isa = PBXBuildFile; fileRef = 994DA58D20E86E5E00822E49 /* Certificate.m */; };
 		9982851C20E8443A001C5CED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9982851B20E8443A001C5CED /* AppDelegate.m */; };
@@ -40,6 +47,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		994B653720F31FF1005D7177 /* CertificateImporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CertificateImporter.h; sourceTree = "<group>"; };
+		994B653A20F320A6005D7177 /* CertificateValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CertificateValidator.h; sourceTree = "<group>"; };
+		994B653B20F320A6005D7177 /* CertificateValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CertificateValidator.m; sourceTree = "<group>"; };
+		994B653D20F32421005D7177 /* V2CertificateImporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = V2CertificateImporter.h; sourceTree = "<group>"; };
+		994B653E20F32421005D7177 /* V2CertificateImporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = V2CertificateImporter.m; sourceTree = "<group>"; };
+		994B654220F333B6005D7177 /* Issuer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Issuer.h; sourceTree = "<group>"; };
+		994B654420F333ED005D7177 /* V2Issuer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = V2Issuer.h; sourceTree = "<group>"; };
+		994B654520F333ED005D7177 /* V2Issuer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = V2Issuer.m; sourceTree = "<group>"; };
+		994B654720F458FF005D7177 /* Assertion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Assertion.h; sourceTree = "<group>"; };
+		994B654820F45A72005D7177 /* Assertion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Assertion.m; sourceTree = "<group>"; };
+		994B654A20F4669D005D7177 /* Verification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Verification.h; sourceTree = "<group>"; };
+		994B654B20F4669D005D7177 /* Verification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Verification.m; sourceTree = "<group>"; };
+		994B654D20F46A9E005D7177 /* Receipt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Receipt.h; sourceTree = "<group>"; };
+		994B654E20F46A9E005D7177 /* Receipt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Receipt.m; sourceTree = "<group>"; };
 		994DA58620E86A3C00822E49 /* CertificateDetailTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CertificateDetailTableViewCell.h; sourceTree = "<group>"; };
 		994DA58720E86A3C00822E49 /* CertificateDetailTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CertificateDetailTableViewCell.m; sourceTree = "<group>"; };
 		994DA58C20E86E5E00822E49 /* Certificate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Certificate.h; sourceTree = "<group>"; };
@@ -92,11 +113,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		994B653520F31FA4005D7177 /* CertificateImporter */ = {
+			isa = PBXGroup;
+			children = (
+				994B653720F31FF1005D7177 /* CertificateImporter.h */,
+				994B653D20F32421005D7177 /* V2CertificateImporter.h */,
+				994B653E20F32421005D7177 /* V2CertificateImporter.m */,
+			);
+			path = CertificateImporter;
+			sourceTree = "<group>";
+		};
+		994B653620F31FB0005D7177 /* CertificateValidator */ = {
+			isa = PBXGroup;
+			children = (
+				994B653A20F320A6005D7177 /* CertificateValidator.h */,
+				994B653B20F320A6005D7177 /* CertificateValidator.m */,
+			);
+			path = CertificateValidator;
+			sourceTree = "<group>";
+		};
 		994DA58B20E86E4B00822E49 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				994B654A20F4669D005D7177 /* Verification.h */,
+				994B654B20F4669D005D7177 /* Verification.m */,
 				994DA58C20E86E5E00822E49 /* Certificate.h */,
 				994DA58D20E86E5E00822E49 /* Certificate.m */,
+				994B654220F333B6005D7177 /* Issuer.h */,
+				994B654420F333ED005D7177 /* V2Issuer.h */,
+				994B654520F333ED005D7177 /* V2Issuer.m */,
+				994B654720F458FF005D7177 /* Assertion.h */,
+				994B654820F45A72005D7177 /* Assertion.m */,
+				994B654D20F46A9E005D7177 /* Receipt.h */,
+				994B654E20F46A9E005D7177 /* Receipt.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -124,6 +173,8 @@
 		9982851920E8443A001C5CED /* blockcerts-objc */ = {
 			isa = PBXGroup;
 			children = (
+				994B653620F31FB0005D7177 /* CertificateValidator */,
+				994B653520F31FA4005D7177 /* CertificateImporter */,
 				994DA58B20E86E4B00822E49 /* Models */,
 				9982851A20E8443A001C5CED /* AppDelegate.h */,
 				9982851B20E8443A001C5CED /* AppDelegate.m */,
@@ -311,11 +362,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				994DA58920E86A3C00822E49 /* CertificateDetailTableViewCell.m in Sources */,
+				994B654C20F4669D005D7177 /* Verification.m in Sources */,
 				994DA58E20E86E5E00822E49 /* Certificate.m in Sources */,
+				994B654620F333ED005D7177 /* V2Issuer.m in Sources */,
+				994B653F20F32421005D7177 /* V2CertificateImporter.m in Sources */,
 				9982852A20E8443D001C5CED /* main.m in Sources */,
 				9982851C20E8443A001C5CED /* AppDelegate.m in Sources */,
+				994B654920F45A72005D7177 /* Assertion.m in Sources */,
+				994B654320F333B6005D7177 /* Issuer.h in Sources */,
 				999D0D6F20E86617002CD4E1 /* CertificateDetailViewController.m in Sources */,
+				994B653C20F320A6005D7177 /* CertificateValidator.m in Sources */,
 				999D0D6420E84A2D002CD4E1 /* CertificatesTableViewController.m in Sources */,
+				994B654F20F46A9E005D7177 /* Receipt.m in Sources */,
 				999D0D6A20E84D28002CD4E1 /* CertificateTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
