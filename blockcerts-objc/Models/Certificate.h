@@ -12,6 +12,7 @@
 #import "Assertion.h"
 #import "Verification.h"
 #import "Receipt.h"
+#import "Recipient.h"
 
 @interface Certificate : NSObject
 
@@ -24,6 +25,7 @@
 @property (nonatomic, copy, nonnull) NSURL *shareURL;
 //@property (nonatomic, copy, nonnull) NSString *issuer;
 @property (nonatomic, copy, nonnull) V2Issuer *issuer;
+@property (nonatomic, copy, nonnull) Recipient *recipient;
 @property (nonatomic, copy, nonnull) Assertion *assertion;
 @property (nonatomic, copy, nonnull) Verification *verification;
 @property (nonatomic, copy, nonnull) Receipt *receipt;

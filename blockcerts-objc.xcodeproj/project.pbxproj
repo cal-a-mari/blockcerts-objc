@@ -16,6 +16,7 @@
 		994B654F20F46A9E005D7177 /* Receipt.m in Sources */ = {isa = PBXBuildFile; fileRef = 994B654E20F46A9E005D7177 /* Receipt.m */; };
 		994DA58920E86A3C00822E49 /* CertificateDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 994DA58720E86A3C00822E49 /* CertificateDetailTableViewCell.m */; };
 		994DA58E20E86E5E00822E49 /* Certificate.m in Sources */ = {isa = PBXBuildFile; fileRef = 994DA58D20E86E5E00822E49 /* Certificate.m */; };
+		994FD53020F5B7A5006FFED6 /* Recipient.m in Sources */ = {isa = PBXBuildFile; fileRef = 994FD52F20F5B7A5006FFED6 /* Recipient.m */; };
 		9982851C20E8443A001C5CED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9982851B20E8443A001C5CED /* AppDelegate.m */; };
 		9982852420E8443D001C5CED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9982852320E8443D001C5CED /* Assets.xcassets */; };
 		9982852720E8443D001C5CED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9982852520E8443D001C5CED /* LaunchScreen.storyboard */; };
@@ -65,6 +66,8 @@
 		994DA58720E86A3C00822E49 /* CertificateDetailTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CertificateDetailTableViewCell.m; sourceTree = "<group>"; };
 		994DA58C20E86E5E00822E49 /* Certificate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Certificate.h; sourceTree = "<group>"; };
 		994DA58D20E86E5E00822E49 /* Certificate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Certificate.m; sourceTree = "<group>"; };
+		994FD52E20F5B7A5006FFED6 /* Recipient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Recipient.h; sourceTree = "<group>"; };
+		994FD52F20F5B7A5006FFED6 /* Recipient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Recipient.m; sourceTree = "<group>"; };
 		9982851720E8443A001C5CED /* blockcerts-objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "blockcerts-objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9982851A20E8443A001C5CED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9982851B20E8443A001C5CED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -146,6 +149,8 @@
 				994B654820F45A72005D7177 /* Assertion.m */,
 				994B654D20F46A9E005D7177 /* Receipt.h */,
 				994B654E20F46A9E005D7177 /* Receipt.m */,
+				994FD52E20F5B7A5006FFED6 /* Recipient.h */,
+				994FD52F20F5B7A5006FFED6 /* Recipient.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -367,6 +372,7 @@
 				994B654620F333ED005D7177 /* V2Issuer.m in Sources */,
 				994B653F20F32421005D7177 /* V2CertificateImporter.m in Sources */,
 				9982852A20E8443D001C5CED /* main.m in Sources */,
+				994FD53020F5B7A5006FFED6 /* Recipient.m in Sources */,
 				9982851C20E8443A001C5CED /* AppDelegate.m in Sources */,
 				994B654920F45A72005D7177 /* Assertion.m in Sources */,
 				994B654320F333B6005D7177 /* Issuer.h in Sources */,
