@@ -9,19 +9,15 @@
 #import "CertificateDetailViewController.h"
 #import "CertificateDetailTableViewCell.h"
 
-@interface CertificateDetailViewController ()
-
-@property (nonatomic, nonnull) Certificate *certificate;
-
-@end
-
 @implementation CertificateDetailViewController
+
+Certificate *_certificate;
 
 -(instancetype)initWithCertificate:(Certificate *)certificate {
     self = [super initWithNibName:@"CertificateDetailViewController"
                            bundle:nil];
     if (self) {
-        self.certificate = certificate;
+        _certificate = certificate;
     }
     return self;
 }
@@ -47,19 +43,19 @@
 
     if (indexPath.row == 0) {
         cell.textLabel.text = @"Title";
-        cell.detailTextLabel.text = self.certificate.title;
+        cell.detailTextLabel.text = _certificate.title;
     } else if (indexPath.row == 1) {
         cell.textLabel.text = @"Subtitle";
-        cell.detailTextLabel.text = self.certificate.subtitle;
+        cell.detailTextLabel.text = _certificate.subtitle;
     } else if (indexPath.row == 2) {
         cell.textLabel.text = @"Description";
-        cell.detailTextLabel.text = self.certificate.certificateDescription;
+        cell.detailTextLabel.text = _certificate.certificateDescription;
     } else if (indexPath.row == 3) {
         cell.textLabel.text = @"Issuer";
-        cell.detailTextLabel.text = self.certificate.issuer;
+        cell.detailTextLabel.text = _certificate.issuer.name;
     } else if (indexPath.row == 4) {
         cell.textLabel.text = @"Share URL";
-        cell.detailTextLabel.text = self.certificate.shareURL.absoluteString;
+        cell.detailTextLabel.text = _certificate.shareURL.absoluteString;
     }
     
     return cell;

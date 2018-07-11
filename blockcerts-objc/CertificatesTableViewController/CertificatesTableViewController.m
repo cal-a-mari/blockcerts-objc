@@ -14,11 +14,13 @@
 
 @interface CertificatesTableViewController ()
 
-@property (nonatomic, nonnull) NSArray<Certificate *> *certificates;
+//@property (nonatomic, nonnull) NSArray<Certificate *> *certificates;
 
 @end
 
 @implementation CertificatesTableViewController
+
+NSMutableArray<Certificate *> *_certificates;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -34,7 +36,20 @@
 }
 
 -(void) fetchCertificates {
-    
+  NSURL *certURL = [NSURL URLWithString:@"https://api.myjson.com/bins/mf81q"];
+  [V2CertificateImporter importFromURL:certURL completion:^(Certificate *certificate, NSError *error) {
+    [self addCertificate:certificate];
+  }];
+}
+
+-(void)addCertificate:(Certificate *)certificate {
+  if (certificate == nil) { return; }
+  if (_certificates == nil) {
+    _certificates = [NSMutableArray arrayWithObject:certificate];
+  } else {
+    [_certificates addObject:certificate];
+  }
+  [self.tableView reloadData];
 }
 
 -(void)didTapBarButtonItem:(UIBarButtonItem *)sender {
@@ -84,29 +99,25 @@
 
 -(void)didTapImportFromURLButtonWithURL:(NSURL *)url {
     [V2CertificateImporter importFromURL:url completion:^(Certificate *certificate, NSError *error) {
-        if (error != nil) {
-            NSLog(error.description);
-        } else {
-            NSLog(@"yaya");
-        }
+      [self addCertificate:certificate];
     }];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+    return _certificates.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    Certificate *certificate = [self.certificates objectAtIndex:indexPath.row];
+    Certificate *certificate = [_certificates objectAtIndex:indexPath.row];
     CertificateTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[CertificateTableViewCell cellIdentifier]];
     cell.titleLabel.text = certificate.title;
-    cell.issuerLabel.text = certificate.issuer;
+    cell.issuerLabel.text = certificate.issuer.name;
     cell.certificateImageView.image = certificate.image;
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    Certificate *certificate = [self.certificates objectAtIndex:indexPath.row];
+    Certificate *certificate = [_certificates objectAtIndex:indexPath.row];
     CertificateDetailViewController *detailViewController = [[CertificateDetailViewController alloc] initWithCertificate:certificate];
     [self.navigationController pushViewController:detailViewController animated:YES];
 }
