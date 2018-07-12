@@ -17,11 +17,9 @@
 @interface Certificate : NSObject
 
 @property (nonatomic, copy, nonnull) NSString *title;
-@property (nonatomic, copy, nullable) NSString *subtitle;
 @property (nonatomic, copy, nonnull) NSString *certificateDescription;
 @property (nonatomic, copy, nonnull) NSString *certificateIDString;
 @property (nonatomic, copy, nullable) UIImage *image;
-@property (nonatomic, copy, nonnull) NSString *language;
 @property (nonatomic, copy, nonnull) NSURL *shareURL;
 //@property (nonatomic, copy, nonnull) NSString *issuer;
 @property (nonatomic, copy, nonnull) V2Issuer *issuer;

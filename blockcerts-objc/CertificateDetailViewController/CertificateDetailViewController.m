@@ -53,7 +53,7 @@ Certificate *_certificate;
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
   switch (section) {
     case RowSectionDetails:
-      return 5;
+      return 3;
     case RowSectionIssuer:
       return 3;
     case RowSectionVerify:
@@ -123,14 +123,6 @@ Certificate *_certificate;
       cell.detailTextLabel.text = _certificate.certificateIDString;
       break;
     case 2:
-      cell.textLabel.text = @"Language";
-      cell.detailTextLabel.text = _certificate.language;
-      break;
-    case 3:
-      cell.textLabel.text = @"Subtitle";
-      cell.detailTextLabel.text = _certificate.subtitle;
-      break;
-    case 4:
       cell.textLabel.text = @"Title";
       cell.detailTextLabel.text = _certificate.title;
       break;
@@ -192,7 +184,7 @@ Certificate *_certificate;
     case 2:
       cell.textLabel.text = @"Issued On";
       NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-      [dateFormatter setDateFormat:@"mm dd yyyy"];
+      [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
       cell.detailTextLabel.text = [dateFormatter stringFromDate:_certificate.assertion.issuedOn];
       break;
   }

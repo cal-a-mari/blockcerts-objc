@@ -48,7 +48,6 @@
   
   NSString *title = [certificateData valueForKey:@"name"];
   NSString *description = [certificateData valueForKey:@"description"];
-  NSString *subtitle = [certificateData valueForKey:@"subtitle"];
   NSString *certificateIDString = [certificateData valueForKey:@"id"];
   NSURL *shareURL = [[NSURL alloc] initWithString:certificateIDString];
   NSURL *certificateImageURL = [NSURL URLWithString:[certificateData valueForKey:@"image"]];
@@ -65,7 +64,6 @@
   
   _title = title;
   _certificateDescription = description;
-  _subtitle = subtitle;
   _certificateIDString = certificateIDString;
   _shareURL = shareURL;
   _image = logo;

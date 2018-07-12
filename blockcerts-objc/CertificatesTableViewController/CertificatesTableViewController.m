@@ -36,7 +36,7 @@ NSMutableArray<Certificate *> *_certificates;
 }
 
 -(void) fetchCertificates {
-  NSURL *certURL = [NSURL URLWithString:@"https://api.myjson.com/bins/mf81q"];
+  NSURL *certURL = [NSURL URLWithString:@"https://api.myjson.com/bins/1g57c6"];
   [V2CertificateImporter importFromURL:certURL completion:^(Certificate *certificate, NSError *error) {
     [self addCertificate:certificate];
   }];
